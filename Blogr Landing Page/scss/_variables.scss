@@ -1,0 +1,27 @@
+// primary colors
+$CTA-text:hsl(356, 100%, 66%);
+$CTA-hover-background:hsl(355, 100%, 74%);
+$headings:hsl(208, 49%, 24%);
+$text:hsl(0, 0%, 100%);
+$footer-text: hsl(240, 2%, 79%);
+$footer-text-transparent: hsla(240, 2%, 79%, 0.25);
+$body-copy:hsl(207, 13%, 34%);
+$footer-background:hsl(240, 10%, 16%);
+$CTA-Very-light-red:hsl(13, 100%, 72%);
+$CTA-Light-red: hsl(353, 100%, 62%);
+$Very-dark-gray-blue: hsl(237, 17%, 21%);
+$Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+// fonts
+$font-weights: (
+    "light":300,
+    "regular":400,
+    "medium":500,
+    "bold":600,
+    "bolder":700
+);
+$font-family1: 'Overpass', sans-serif;
+$font-family2:  'Ubuntu', sans-serif;
+
+// media query
+$mobile: 800px; 
