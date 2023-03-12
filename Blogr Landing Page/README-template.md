@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/DavidOG03/Blogr-Landing-Page-Frontend-Mentor-Challenge/)
+- Live Site URL: [Blogr Landing Page](https://blogrlandingpagedavidog.netlify.app/)
 
 ## My process
 
@@ -48,6 +48,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [GitHub Page](https://github.com/DavidOG03)
 - Frontend Mentor - [@DavidOG03](https://www.frontendmentor.io/profile/DavidOG03)
 
