@@ -1,99 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Blogr Landing Page</title>
 </head>
 <body>
-  Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+    <!-- Mobile Header -->
+   <header class="mobile--header">
 
-  Company
+        <div class="mobile--header--head">
 
-  About
-  Team
-  Blog
-  Careers
+            <img src="/images/logo.svg" alt="logo" class="mobile--header--head__logo">
 
-  Connect
+            <div class="mobile--header--head__ham" id="hamburger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+            <nav class="mobile--header--head__nav" id="nav--bar">
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+                <ul class="__links">
+                    <li class="__link moblink"><a href="#">Product</a><img src="/images/icon-arrow-dark.svg" alt="" class="arrow">
+                        <ul class="__product--list list">
+                            <li class="__list"><a href="#"> Overview</a></li>
+                            <li class="__list"><a href="#">Pricing</a></li>
+                            <li class="__list"><a href="#">Marketplace </a></li>
+                            <li class="__list"><a href="#">  Features</a></li>
+                            <li class="__list"><a href="#">Integrations</a></li>
+                        </ul>
+                        </li>
+                    <li class="__link moblink"><a href="#">Company</a> <img src="/images/icon-arrow-dark.svg" alt="" class="arrow"> 
+                        <ul class="__company--list list">
+                            <li class="__list"><a href="#">  About </a></li>
+                            <li class="__list"><a href="#">Team</a></li>
+                            <li class="__list"><a href="#">Blog</a></li>
+                            <li class="__list"><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="__link moblink">
+                        <a href="#" class="__connect">Connect</a> <img src="/images/icon-arrow-dark.svg" alt="" class="arrow">
+                        <ul class="__connect--list list">
+                            <li class="__list"><a href="#"> Contact</a></li>
+                            <li class="__list"><a href="#">Newsletter</a></li>
+                            <li class="__list"><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <a href="#" class="__login">Login</a>
+                <a href="#" class="__signup">Sign Up</a>
+            </nav>
+        </div>
+        <div class="CTA">
+            <h1 class="CTA__text">A modern publishing platform</h1>
+            <p class="CTA__body">Grow your audience and build your online brand </p>
+            <div class="CTA__buttons">
+            <a href="#" class="start--button">Start for Free</a>
+            <a href="#" class="learn--button">Learn More</a>
+        </div>
+    </header>
 
-  Start for Free
-  Learn More
+    <!-- Desktop Header -->
+    <header class="desktop--header">
+        <div class="desktop--header__head">
+            <div class="desktop--header__head to-left">
+                <img src="/images/logo.svg" alt="logo">
+            <nav class="desktop--nav">
+                <ul class="desktop--nav__links">
+                    <li class="__link desktoplink"><a href="#">Product</a><img src="/images/icon-arrow-light.svg" alt="" class="arrow">
+                        <ul class="desktop--nav__product--list list">
+                            <li class="__list"><a href="#"> Overview</a></li>
+                            <li class="__list"><a href="#">Pricing</a></li>
+                            <li class="__list"><a href="#">Marketplace </a></li>
+                            <li class="__list"><a href="#">Features</a></li>
+                            <li class="__list"><a href="#">Integrations</a></li>
+                        </ul>
+                    </li>
+                    <li class="__link desktoplink"><a href="#">Company</a><img src="/images/icon-arrow-light.svg" alt="" class="arrow">
+                        <ul class="__company--list list">
+                            <li class="__list"><a href="#">About </a></li>
+                            <li class="__list"><a href="#">Team</a></li>
+                            <li class="__list"><a href="#">Blog</a></li>
+                            <li class="__list"><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="__link desktoplink"><a href="#">Connect</a><img src="/images/icon-arrow-light.svg" alt="" class="arrow">
+                        <ul  class="__connect--list list">
+                            <li class="__list"><a href="#"> Contact </a></li>
+                            <li class="__list"><a href="#">Newsletter</a></li>
+                            <li class="__list"><a href="#">LinkedIn</a></li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </div>
 
-  Designed for the future
+            <div class="desktop--nav__buttons">
+                <a href="#" class="__login">Login</a>
+                <a href="#" class="__signup">Sign Up</a>
+            </div>
+        </div>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+        <div class="CTA">
+            <h1 class="CTA__text">A modern publishing platform</h1>
+            <p class="CTA__body">Grow your audience and build your online brand </p>
+            <div class="CTA__buttons">
+            <a href="#" class="start--button">Start for Free</a>
+            <a href="#" class="learn--button">Learn More</a>
+        </div>
+    </header>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+    <!-- Body -->
+    <main class="mobile--main">
+        <h2 class="__firstheader">Designed for the future</h2>
+        <div class="__body">
+            <img src="/images/illustration-editor-mobile.svg" alt="" class="__editor--illustration">
+        
+            <div class="__body__future">
+                <h3 class="__body__future__header">Introducing an extensible editor </h3>
+                <p class="__body__future__text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                </p>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                <h3 class="__body__future__header"> Robust content management </h3>
+                <p class="__body__future__text">
+                    Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                </p>
+                <img src="/images/illustration-phones.svg" alt="phones" class="__body__future__phones"> 
+            </div>
+            <div class="__state-of-the-art">
+                <h3 class="__state-of-the-art__sa--header"> State of the Art Infrastructure </h3>
+                <p class="__state-of-the-art__sa--text">
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+                <img src="/images/bg-pattern-circles.svg" alt="pattern-circles" class="__state-of-the-art__bg--pattern">
+            </div>
+            <div class="__easy--access">
+                
+                <img src="/images/illustration-laptop-mobile.svg" alt="" class="__easy--access__laptop--illustration">
+                <div class="__free-open-simple">
+                    
+                    <h3 class="__free-open-simple__header"> Free, open, simple </h3>
+                    <p class="__free-open-simple__text">
+                        Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                    </p>
+                </div>
+                <div class="__powerful--tooling">
+                    <h3 class="__powerful--tooling__header">Powerful tooling</h3>
+                    <p class="__powerful--tooling__text">
+                        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+    <!-- desktop main -->
+                        
+    <main class="desktop--main">
+       
+        <div class="__body">
+            <h2 class="__firstheader">Designed for the future</h2>
+            <div class="__body__editor">
+                <img src="/images/illustration-editor-desktop.svg" alt="" class="__body__editor__illustration">
+        
+                <div class="__body__editor__future">
+                    <h3 class="__body__editor__future__header">Introducing an extensible editor </h3>
+                    <p class="__body__editor__future__text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                    </p>
+    
+                    <h3 class="__body__editor__future__header"> Robust content management </h3>
+                    <p class="__body__editor__future__text">
+                        Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                    </p>
+                    <img src="/images/illustration-phones.svg" alt="phones" class="__body__editor__future__phones"> 
+                </div>
+            </div>
+           
+            <div class="__state-of-the-art">
+                <div class="__state-of-the-art__body">
+                    <h3 class="__state-of-the-art__body__sa--header"> State of the Art Infrastructure </h3>
+                <p class="__state-of-the-art__body__sa--text">
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+                </div>
+                
+                <img src="/images/bg-pattern-circles.svg" alt="pattern-circles" class="__state-of-the-art__bg--pattern">
+            </div>
 
-  Product
+            <div class="__easy--access">
+                
+                <img src="/images/illustration-laptop-desktop.svg" alt="" class="__easy--access__laptop--illustration">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+                <div class="__easy--access__body">
+                    <div class="__free-open-simple">
+                    
+                        <h3 class="__free-open-simple__header"> Free, open, simple </h3>
+                        <p class="__free-open-simple__text">
+                            Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                        </p>
+                    </div>
+                    <div class="__powerful--tooling">
+                        <h3 class="__powerful--tooling__header">Powerful tooling</h3>
+                        <p class="__powerful--tooling__text">
+                            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>  
+       
 
-  Company
+    <!-- Footer Section -->
+    <footer class="footer">
+        <img src="/images/logo.svg" alt="logo" class="footer__logo--footer">
+        <div class="footer__footer--links__product">
+            <h4 class="footer__footer--links__product--header">Product</h4>
+            <ul class="footer__footer--links__product--links">
+                <li class="footer__footer--links__product--links__link"><a href="#">Overview</a></li>
+                <li class="footer__footer--links__product--links__link"><a href="#">Pricing </a></li>
+                <li class="footer__footer--links__product--links__link"><a href="#">Marketplace</a></li>
+                <li class="footer__footer--links__product--links__link"><a href="#">Features</a></li>
+                <li class="footer__footer--links__product--links__link"><a href="#">Integrations</a></li>
+            </ul>
+        </div>
+        <div class="footer__footer--links__company">
+            <h4 class="footer__footer--links__company--header">Company</h4>
+            <ul class="footer__footer--links__company--links">
+                <li class="footer__footer--links__company--links__link"><a href="#">About</a></li>
+                <li class="footer__footer--links__company--links__link"><a href="#">Team</a></li>
+                <li class="footer__footer--links__company--links__link"><a href="#">Blog</a></li>
+                <li class="footer__footer--links__company--links__link"><a href="#">Careers</a></li>
 
-  About
-  Team
-  Blog
-  Careers
+            </ul>
+        </div>
+        <div class="footer__footer--links__connect">
+            <h4 class="footer__footer--links__connect--header">Connect</h4>
+            <ul class="footer__footer--links__connect--links">
+                <li class="footer__footer--links__connect--links__link"><a href="#">Contact</a></li>
+                <li class="footer__footer--links__connect--links__link"><a href="#">Newsletter</a></li>
+                <li class="footer__footer--links__connect--links__link"><a href="#">LinkedIn</a></li>
 
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+            </ul>
+        </div>
+        <small>Challenge by <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Coded by <a href="https://github.com/DavidOG03">David_OG</a></small>
+    </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <script src="./script.js" defer></script>
 </body>
 </html>
